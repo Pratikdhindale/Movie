@@ -1,0 +1,155 @@
+.movie-detail {
+    min-height: 100vh;
+  }
+  
+  .backdrop {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+  }
+  
+  .backdrop-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+    padding: 2rem;
+    min-height: 70vh;
+  }
+  
+  .movie-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* display: flex;
+    gap: 2rem;
+    align-items: flex-start; */
+  }
+  
+  .movie-poster-2 {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .movie-text {
+    flex: 1;
+  }
+  
+  .movie-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tagline {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overview {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .genres {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .genre-tag {
+    background: #e50914;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .cast-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cast-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+  }
+  
+  .cast-card {
+    text-align: center;
+  }
+  
+  .cast-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cast-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .cast-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  @media (max-width: 1024px) {
+    .movie-info {
+      padding: 1rem;
+    }
+    
+    /* .movie-poster {
+      width: 250px;
+    } */
+  }
+  
+  @media (max-width: 768px) {
+    .movie-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .movie-poster {
+      width: 268px;
+    }
+  
+    .movie-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .cast-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .backdrop-overlay {
+      padding: 1rem;
+    }
+  
+    .movie-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .cast-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .movie-poster {
+      width: 267px;
+    }
+  }

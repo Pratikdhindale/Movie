@@ -1,0 +1,43 @@
+
+.top-rated-page {
+    padding: 2rem 0;
+  }
+  
+  .top-rated-page h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .top-rated-page h1 {
+      font-size: 2rem;
+    }
+  
+    .movies-grid {
+      gap: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .top-rated-page h1 {
+      font-size: 1.5rem;
+    }
+  
+    .movies-grid {
+      gap: 0.5rem;
+    }
+  }
